@@ -6,6 +6,7 @@
   --veryPaleBlue: hsl(225, 100%, 98%);
   --desaturatedBlue: hsl(224, 23%, 55%);
   --darkBlue: hsl(223, 47%, 23%);
+  --redHat: 'Red Hat Display', sans-serif;
 }
 
 * {
@@ -19,18 +20,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--veryPaleBlue);
+  background-color: var(--paleBlue);
   background-image: url("../images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: var(--redHat);
 }
 
 main {
   width: 335px;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
   background-color: white;
+  box-shadow: 0px 6px 10px -6px rgb(0, 0, 0, 0.2);
 }
 
 #container {
@@ -64,19 +66,25 @@ main {
   margin: 30px 0;
   background-color: var(--veryPaleBlue);
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
 }
 
 #music h3 {
-  font-size: 14px;
+  color: var(--darkBlue);
+  font-size: 13px;
+  font-weight: 900;
 }
 
 #music p {
   color: var(--desaturatedBlue);
+  font-size: 13px;
 }
 
 a {
-  margin-left: 10px;
+  margin-left: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--brightBlue);
 }
 
 #action {
@@ -87,16 +95,20 @@ a {
 }
 
 #pay {
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   color: white;
+  font-weight: 700;
+  font-family: var(--redHat);
   background-color: var(--brightBlue);
   border: none;
-  box-shadow: 0 0 10px var(--brightBlue);
+  box-shadow: 0 10px 20px -10px var(--brightBlue);
 }
 
 #cancel {
   background-color: transparent;
   color: var(--desaturatedBlue);
   border: none;
+  font-family: var(--redHat);
+  font-weight: 700;
 }
