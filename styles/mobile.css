@@ -87,6 +87,12 @@ a {
   color: var(--brightBlue);
 }
 
+a:hover {
+  cursor: pointer;
+  color: hsl(245deg 75% 52% / 60%);
+  text-decoration: none;
+}
+
 #action {
   display: flex;
   flex-direction: column;
@@ -105,10 +111,20 @@ a {
   box-shadow: 0 10px 20px -10px var(--brightBlue);
 }
 
+#pay:hover {
+  cursor: pointer;
+  background-color: hsl(245deg 75% 52% / 60%);
+}
+
 #cancel {
   background-color: transparent;
   color: var(--desaturatedBlue);
   border: none;
   font-family: var(--redHat);
   font-weight: 700;
+}
+
+#cancel:hover {
+  cursor: pointer;
+  color: var(--darkBlue);
 }
